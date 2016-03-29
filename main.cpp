@@ -138,12 +138,14 @@ void LoadStudentRooms( Room rooms[25] )
     // 10 Room 18, NORTH of Room 5
 
     // 11 Room 19, SOUTH of Room 2
-
+	rooms[19].Setup( "Logan's room", "Strangely, there is a computer in this room." );
+	SetNeighbors(rooms, 19, 2, NORTH);
     // 12 Room 20, SOUTH of Room 5
 
     // 13 Room 21, WEST of Room 6
 
     // 14 Room 22, EAST of Room 7
+	
 }
 
 void SetNeighbors( Room rooms[18], int room, int neighbor, Direction dir )
