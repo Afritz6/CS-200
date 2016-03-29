@@ -116,8 +116,12 @@ void LoadCoreRooms( Room rooms[25] )
 }
 
 void LoadStudentRooms( Room rooms[25] )
-{
-    // 1 Room 8, NORTH of Room 0
+{	
+	string roomName = "Test Room";
+	string roomDesc = "This is a description!";
+
+	rooms[8].Setup(roomName,roomDesc);
+	SetNeighbors(rooms, 0, 8, NORTH);
 
     // 2 Room 9, NORTH of Room 1
     rooms[9].Setup("Joe's Room", "This is Joe's room");
@@ -163,5 +167,3 @@ void SetNeighbors( Room rooms[18], int room, int neighbor, Direction dir )
     rooms[room].SetNeighbor( dir, neighbor );
     rooms[neighbor].SetNeighbor( opp, room );
 }
-
-
