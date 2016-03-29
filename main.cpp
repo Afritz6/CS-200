@@ -147,6 +147,9 @@ void LoadStudentRooms( Room rooms[25] )
 	rooms[17].Setup("The Dungeon", "Place of No Escape");
 	SetNeighbors(rooms, 2, 17, NORTH);
     // 10 Room 18, NORTH of Room 5
+	rooms[8].Setup("Maze Forest", "Anyone goes in to the forest comes back with a treasure. ");
+	SetNeighbors(rooms, 5, 18, NORTH);
+
 
     // 11 Room 19, SOUTH of Room 2
 	rooms[19].Setup( "Logan's room", "Strangely, there is a computer in this room." );
