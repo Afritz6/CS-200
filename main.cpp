@@ -130,6 +130,8 @@ void LoadStudentRooms( Room rooms[25] )
     // 6 Room 13, SOUTH of Room 7
 
     // 7 Room 15, WEST of Room 0
+	rooms[15].Setup("Unseen Forest", "The forest that is rumored to be accursed and is home only to be beasts.");
+	SetNeighbors(rooms, 0, 15, WEST);
 
     // 8 Room 16, EAST of Room 1
 
