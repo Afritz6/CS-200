@@ -120,6 +120,8 @@ void LoadStudentRooms( Room rooms[25] )
     // 1 Room 8, NORTH of Room 0
 
     // 2 Room 9, NORTH of Room 1
+    rooms[9].Setup("Joe's Room", "This is Joe's room");
+	SetNeighbors(rooms, 1, 9, NORTH);
 
     // 3 Room 10, WEST of Room 2
 
