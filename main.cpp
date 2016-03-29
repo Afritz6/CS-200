@@ -136,6 +136,9 @@ void LoadStudentRooms( Room rooms[25] )
     // 9 Room 17, NORTH of Room 2
 
     // 10 Room 18, NORTH of Room 5
+	rooms[8].Setup("Maze Forest", "Anyone goes in to the forest comes back with a treasure. ");
+	SetNeighbors(rooms, 5, 18, NORTH);
+
 
     // 11 Room 19, SOUTH of Room 2
 
