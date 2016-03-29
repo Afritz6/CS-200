@@ -134,7 +134,8 @@ void LoadStudentRooms( Room rooms[25] )
     // 8 Room 16, EAST of Room 1
 
     // 9 Room 17, NORTH of Room 2
-
+	rooms[17].Setup("The Dungeon", "Place of No Escape");
+	SetNeighbors(rooms, 2, 17, NORTH);
     // 10 Room 18, NORTH of Room 5
 
     // 11 Room 19, SOUTH of Room 2
