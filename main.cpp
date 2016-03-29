@@ -103,6 +103,7 @@ void LoadCoreRooms( Room rooms[25] )
     rooms[5].Setup( "Cottage",          "An old cottage sits next to the pond." );
     rooms[6].Setup( "Dirt Road",        "A dirt road begins at this point and stretches toward town." );
     rooms[7].Setup( "Old Well",         "The old well has seen better days." );
+	rooms[12].Setup("Room Name",        "This is the description of the room.");
 
     // Set neighbors (does forward and backward)
     SetNeighbors( rooms, 0, 1, EAST );
@@ -113,6 +114,7 @@ void LoadCoreRooms( Room rooms[25] )
     SetNeighbors( rooms, 2, 3, EAST );
     SetNeighbors( rooms, 4, 5, EAST );
     SetNeighbors( rooms, 3, 4, EAST );
+	SetNeighbors( rooms, 6, 12, SOUTH);
 }
 
 void LoadStudentRooms( Room rooms[25] )
